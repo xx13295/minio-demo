@@ -1,0 +1,19 @@
+
+spring:
+  servlet:
+    multipart:
+      #指定上传文件允许的最大大小。 默认为 1MB
+      max-file-size: 100MB
+      #指定多部分/表单数据请求允许的最大大小。 默认值为 10MB。
+      max-request-size: 100MB
+
+#--------
+# minio
+#--------
+file:
+  minio:
+    enable: true
+    endpoint: http://172.16.1.240:9000
+    bucket: test
+    access-key:
+    secret-key:
